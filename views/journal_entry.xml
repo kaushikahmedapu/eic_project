@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_journal_entry_wizard" model="ir.ui.view">
+        <field name="name">journal.entry.wizard.form</field>
+        <field name="model">journal.entry</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="journal"/>
+                            <field name="account"/>
+                        </group>  
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_pos_entry" string="Pos" type="object" class="oe_highlight"/>
+                    <button name="action_cancel_entry" string="Cancel" type="object" class="oe_highlight"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

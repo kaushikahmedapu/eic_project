@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_time_sheet_wizard" model="ir.ui.view">
+        <field name="name">time.sheet.wizard.form</field>
+        <field name="model">time.sheet</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                        </group>  
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_update_attachment" string="Search" type="object" class="oe_highlight"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>
